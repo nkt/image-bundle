@@ -1,5 +1,6 @@
 Image bundle
 ============
+[![Latest Stable Version](https://poser.pugx.org/nkt/image-bundle/v/stable.svg)](https://packagist.org/packages/nkt/image-bundle) [![Total Downloads](https://poser.pugx.org/nkt/image-bundle/downloads.svg)](https://packagist.org/packages/nkt/image-bundle) [![Latest Unstable Version](https://poser.pugx.org/nkt/image-bundle/v/unstable.svg)](https://packagist.org/packages/nkt/image-bundle) [![License](https://poser.pugx.org/nkt/image-bundle/license.svg)](https://packagist.org/packages/nkt/image-bundle)
 
 Usage
 -----
