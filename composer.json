@@ -1,0 +1,25 @@
+{
+  "name": "nkt/image-bundle",
+  "license": "MIT",
+  "keywords": ["image", "media"],
+  "authors": [
+    {
+      "name": "Gusakov Nikita",
+      "email": "dev@nkt.me"
+    }
+  ],
+  "require": {
+    "symfony/symfony": "~2.3",
+    "ext-imagick": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nkt\\ImageBundle\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}

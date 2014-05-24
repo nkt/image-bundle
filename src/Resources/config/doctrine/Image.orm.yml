@@ -1,0 +1,18 @@
+Nkt\ImageBundle\Entity\Image:
+    type: entity
+    table: nkt_images
+    indexes:
+        type:
+            columns: [type]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        type:
+            type: string
+            length: 10
+        path:
+            type: text
+
