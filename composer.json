@@ -1,6 +1,7 @@
 {
   "name": "nkt/image-bundle",
   "license": "MIT",
+  "description": "Symfony bundle for image uploading",
   "keywords": ["image", "media"],
   "authors": [
     {
