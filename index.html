@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Image bundle by nkt</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/nkt/image-bundle">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Image bundle</h1>
+            <h2>Symfony bundle for image uploading</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/nkt/image-bundle/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/nkt/image-bundle/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="image-bundle" class="anchor" href="#image-bundle"><span class="octicon octicon-link"></span></a>Image bundle</h1>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Add <code>"nkt/image-bundle": "1.0.x-dev"</code> into composer.json.</p>
+
+<p>Add <code>Nkt\ImageBundle\NktImageBundle</code> into your kernel bundles.</p>
+
+<p>Add configuration into <code>app/config/config.yml</code>:</p>
+
+<div class="highlight highlight-yml"><pre><span class="l-Scalar-Plain">nkt_image</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">upload_dir</span><span class="p-Indicator">:</span> <span class="err">%</span><span class="l-Scalar-Plain">kernel.root_dir%/uploads</span> <span class="c1"># Value by default</span>
+    <span class="l-Scalar-Plain">types</span><span class="p-Indicator">:</span>
+        <span class="l-Scalar-Plain">logo</span><span class="p-Indicator">:</span>
+            <span class="l-Scalar-Plain">extension</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">jpg</span>
+            <span class="l-Scalar-Plain">min_width</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">100</span>
+            <span class="l-Scalar-Plain">max_width</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">1000</span>
+            <span class="l-Scalar-Plain">min_height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">100</span>
+            <span class="l-Scalar-Plain">max_height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1000</span>
+        <span class="l-Scalar-Plain">slider</span><span class="p-Indicator">:</span>
+            <span class="l-Scalar-Plain">min_width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">500</span>
+</pre></div>
+
+<p>Import routing in your <code>app/config/routing.yml</code>:</p>
+
+<div class="highlight highlight-yml"><pre><span class="l-Scalar-Plain">nkt_image</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">resource</span><span class="p-Indicator">:</span> <span class="s">"@NktImageBundle/Resources/config/routing.yml"</span>
+    <span class="l-Scalar-Plain">prefix</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/</span>
+</pre></div>
+
+<p>Then clear your application cache, and update database schema.</p>
+
+<div class="highlight highlight-bash"><pre>app/console cache:clear
+app/console doctrine:schema:update --force
+</pre></div>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/nkt">nkt</a> can be found on <a href="https://github.com/nkt/image-bundle">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
